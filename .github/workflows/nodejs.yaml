@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: ['14', 16']
+        node-version: ['14', '16']
 
     steps:
       # Nodejs setup
@@ -25,4 +25,4 @@ jobs:
       - name: yarn install and test
         run: |
           yarn install
-          yarn test:cov
+          yarn test
